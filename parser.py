@@ -23,7 +23,7 @@ class SimpleJSONParser:
         while self._get_current_char() and self._get_current_char().isspace():
             self.index += 1
 
-    def _parse_string(self)
+    def _parse_string(self):
         # Parses a string value from the current position
         self._skip_whitespace()
         assert self._get_current_char() == '"'
